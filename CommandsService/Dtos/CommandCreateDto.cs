@@ -8,6 +8,8 @@ namespace CommandsService.Dtos
 {
     public class CommandCreateDto
     {
+        // the Required Annotation will be checked when hitting CommandsController>>CreateCommandForPlatform, 
+        // if the required field is not provided, the ActionResult will go back with an error
         [Required]
         public string HowTo { get; set; }
         [Required]

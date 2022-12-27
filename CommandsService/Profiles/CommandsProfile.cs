@@ -10,7 +10,7 @@ namespace CommandsService.Profiles
 {
     public class CommandsProfile : Profile
     {
-        protected CommandsProfile()
+        public CommandsProfile()
         {
             // Source -> Target
             CreateMap<Platform, PlatformReadDto>();
