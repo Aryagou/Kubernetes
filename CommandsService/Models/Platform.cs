@@ -15,10 +15,6 @@ namespace CommandsService.Models
         public int ExternalId { get; set; }
         [Required]
         public string Name { get; set; }
-
-        [Required]
-        public string Publisher { get; set; }
-
         public ICollection<Command> Commands { get; set; } = new List<Command>();
         // arya [todo] 
         // 1. what is navigation reference
